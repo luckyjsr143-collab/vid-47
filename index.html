@@ -1,62 +1,185 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <style>
-      table,
-      td,
-      th {
-        border: 1px solid #ddd;
-        text-align: center;
-      }
-
-      table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-
-      th,
-      td {
-        padding: 10px;
-      }
-      tr:nth-child(even) {
-        background-color: #f2f2f2;
-      }
-      tr:hover {
-        background-color: lightpink;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nabver and Logo</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2>The padding Property</h2>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-logo.svg"
+            alt=""
+          />
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              Products
+              <img
+                width="15px"
+                height="15px"
+                src=" https://ico.hugeicons.com/arrow-down-01-stroke-rounded@2x.webp?x=876036921"
+                alt=""
+              />
+            </li>
+            <li>
+              Pricing
+              <img
+                width="15px"
+                height="15px"
+                src=" https://ico.hugeicons.com/arrow-down-01-stroke-rounded@2x.webp?x=876036921"
+                alt=""
+              />
+            </li>
+            <li>
+              Resources
+              <img
+                width="15px"
+                height="15px"
+                src=" https://ico.hugeicons.com/arrow-down-01-stroke-rounded@2x.webp?x=876036921"
+                alt=""
+              />
+            </li>
+            <li>
+              About Us
+              <img
+                width="15px"
+                height="15px"
+                src=" https://ico.hugeicons.com/arrow-down-01-stroke-rounded@2x.webp?x=876036921"
+                alt=""
+              />
+            </li>
+            <div>
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 24 24"
+                focusable="false"
+                class="ep0rzf NMm5M"
+              >
+                <path
+                  d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"
+                ></path>
+              </svg>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <main>
+        <div class="frist">
+          <h1>Download UitraEdit</h1>
+          <div>
+            A professional text editor for Windows, macOS and Linux, build for
+            your most critical work
+          </div>
+          <p>
+            Choose your operating system and download the latest version of the
+            editor. New users get a free 7-day trial after downloading UltraEdit
+          </p>
+        </div>
+      </main>
+      <div class="cards-grid">
+        <div class="download-card">
+          <!-- Windows Logo, Title and Language Icon together -->
+          <div class="header-section">
+            <svg class="windows-icon" viewBox="0 0 24 24">
+              <path
+                d="M0 3.449L9.75 2.1v9.45H0V3.449zM0 12.45h9.75v9.45L0 20.551v-8.1zM10.8 1.95L24 0v11.55H10.8V1.95zM10.8 12.45H24v11.55l-13.2-1.95v-9.6z"
+              />
+            </svg>
+            <span class="title">Windows</span>
+            <!-- Language Icon (Now right next to the title) -->
+            <svg class="lang-icon" viewBox="0 0 24 24" width="24" height="24">
+              <path
+                d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"
+              />
+            </svg>
+          </div>
 
-    <p>Add space between the border and the content in a table.</p>
+          <!-- Version Details -->
+          <div class="version-info">
+            v2026.0 (released 2026-07-09) |
+            <a href="#" class="changes-link">Latest changes</a>
+          </div>
 
-    <table>
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Savings</th>
-      </tr>
-      <tr>
-        <td>Peter</td>
-        <td>Griffin</td>
-        <td>$100</td>
-      </tr>
-      <tr>
-        <td>Lois</td>
-        <td>Griffin</td>
-        <td>$150</td>
-      </tr>
-      <tr>
-        <td>Joe</td>
-        <td>Swanson</td>
-        <td>$300</td>
-      </tr>
-      <tr>
-        <td>Cleveland</td>
-        <td>Brown</td>
-        <td>$250</td>
-      </tr>
-    </table>
+          <!-- Download Button -->
+          <button class="download-btn">Download</button>
+
+          <!-- SHA256 Hash Info -->
+          <div class="hash-section">
+            <span class="hash-label">SHA256</span>
+            <div class="hash-value">
+              E275CBEBFC1FBB65C89D03452F257CD2232E02CDF3136BEE641E26C64DE7F3D1
+            </div>
+          </div>
+        </div>
+        <div class="download-card">
+          <!-- Windows Logo, Title and Language Icon together -->
+          <div class="header-section">
+            <img width="25" height="25" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1280px-Apple_logo_black.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20250629104141" alt="">
+            <span class="title">macOS</span>
+            <!-- Language Icon (Now right next to the title) -->
+            <svg class="lang-icon" viewBox="0 0 24 24" width="24" height="24">
+              <path
+                d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"
+              />
+            </svg>
+          </div>
+
+          <!-- Version Details -->
+          <div class="version-info">
+            v2026.0 (released 2026-07-09) |
+            <a href="#" class="changes-link">Latest changes</a>
+          </div>
+
+          <!-- Download Button -->
+          <button class="download-btn">Download</button>
+
+          <!-- SHA256 Hash Info -->
+          <!-- <div class="hash-section">
+            <span class="hash-label">SHA256</span>
+            <div class="hash-value">
+              E275CBEBFC1FBB65C89D03452F257CD2232E02CDF3136BEE641E26C64DE7F3D1
+            </div>
+          </div> -->
+        </div>
+        <div class="download-card">
+          <!-- Windows Logo, Title and Language Icon together -->
+          <div class="header-section">
+            <img width="24" height="24" src="https://icon.icepanel.io/Technology/svg/Linux.svg" alt="">
+            <span class="title">Linux</span>
+            <!-- Language Icon (Now right next to the title) -->
+            <svg class="lang-icon" viewBox="0 0 24 24" width="24" height="24">
+              <path
+                d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"
+              />
+            </svg>
+          </div>
+
+          <!-- Version Details -->
+          <div class="version-info">
+            v2025.0 (released 2026-08-20) |
+            <a href="#" class="changes-link">Latest changes</a>
+          </div>
+
+          <!-- Download Button -->
+          <button class="download-btn">Download</button>
+
+          <!-- SHA256 Hash Info -->
+          <!-- <div class="hash-section">
+            <span class="hash-label">SHA256</span>
+            <div class="hash-value">
+              E275CBEBFC1FBB65C89D03452F257CD2232E02CDF3136BEE641E26C64DE7F3D1
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
   </body>
 </html>
